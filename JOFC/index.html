@@ -1,0 +1,102 @@
+index
+import React from 'react';
+import './style1.css';
+import logo from './img/ico/logo.png';
+import profileIcon from './img/ico/profile.png';
+import targetIcon from './img/ico/target.png';
+import viewIcon from './img/ico/view.png';
+import heroImage from './img/jofc.jpeg';
+
+const JoyOfFaith = () => {
+  return (
+    <div className="joy-of-faith-app">
+      <nav className="main-navigation">
+        <div className="container">
+          <header className="site-header">
+            <div className="logo">
+              <ul>
+                <li>
+                  <a href="/">
+                    <img src={logo} alt="Joy of Faith logo" />
+                  </a>
+                </li>
+                <li>
+                  <div className="logo-text">
+                    <h2>
+                      Joy of Faith
+                      <br />
+                      North Caloocan
+                    </h2>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <ul className="nav-links">
+              <li style={{ fontSize: '20px' }}>
+                <a href="index.html" className="active">
+                  Home
+                </a>
+              </li>
+              <li style={{ fontSize: '20px' }}>
+                <a href="events.html">Events</a>
+              </li>
+              <li style={{ fontSize: '20px' }}>
+                <a href="history.html">History</a>
+              </li>
+              <li style={{ fontSize: '20px' }}>
+                <a href="blog.html">Blog / News</a>
+              </li>
+              <li style={{ fontSize: '20px' }}>
+                <a href="about.html">About Us</a>
+              </li>
+            </ul>
+            <div className="logbot">
+              <a href="signup.html">
+                <img src={profileIcon} alt="Profile" style={{ height: 50, width: 50 }} />
+              </a>
+            </div>
+          </header>
+        </div>
+      </nav>
+
+      <section className="hero-section">
+        <div className="hero-content">
+          <h1 className="hero-title" style={{ fontSize: '60px' }}>
+            One Heart, One Goal to win souls and to make disciples, According to the calling of Christ-Jesus.
+          </h1>
+          <div className="hero-buttons">
+            <a href="donate.html" className="button primary">
+              DONATE
+            </a>
+            <a href="signup.html" className="button secondary">
+              VOLUNTEER
+            </a>
+          </div>
+          <div className="MV">
+            <ul>
+              <li>
+                <img src={targetIcon} alt="Mission Icon" />
+              </li>
+              <li>
+                <h1>MISSION</h1>
+                <p>To Win Souls and Make Disciples</p>
+              </li>
+              <li>
+                <img src={viewIcon} alt="Vision Icon" />
+              </li>
+              <li>
+                <h1>VISION</h1>
+                <p>To Make Every Believer a Leader</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="hero-image">
+          <img src={heroImage} alt="Joy of Faith community" />
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default JoyOfFaith;
